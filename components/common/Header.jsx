@@ -18,6 +18,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 
 import AdbIcon from '@mui/icons-material/Adb';
+import Dropdown from './Dropdown';
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -166,7 +167,9 @@ const Header = () => {
         <header className='w-full h-[90px] md:h-[60px] sticky  top-0 flex items-center bg-white z-50'>
             <div className="hidden md:flex container mx-auto items-center justify-between h-full">
                 {/* leftside */}
-                <div className='text-2xl font-bold text-black'>LoGo</div>
+                <div className='text-2xl font-bold text-black'>
+                    <Link href='/'>Logo</Link>
+                </div>
                 {/* middleside */}
                 <div className="w-[790px] h-full grid place-items-center">
                     <ul className="flex items-center  gap-12">
@@ -206,10 +209,11 @@ const Header = () => {
                                 <p>2 items</p>
                             </div>
                         </div>
-                        <Link href='/login'>
-
-                            <FaUser className='text-green-500 h-8 w-8' />
-                        </Link>
+                      
+                            <Dropdown>
+                           
+                            </Dropdown>
+                      
                     </ul>
                 </div>
             </div>

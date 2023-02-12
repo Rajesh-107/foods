@@ -8,16 +8,7 @@ import companylogo from '../../images/usda_organic 1.png'
 import companylogo2 from '../../images/gluten-free 1.png'
 
 const HeroSection = () => {
-    const styles = {
-        container: {
-          background: 'url(../)',
-          backgroundPosition: 'top left, bottom right',
-          backgroundRepeat: 'no-repeat, no-repeat',
-          backgroundSize: 'cover, cover',
-          height: '200px',
-          width: '200px'
-        }
-      };
+  
     return (
         <section class="bg-white  dark:bg-gray-900">
              <div className='-my-14'>
@@ -26,7 +17,7 @@ const HeroSection = () => {
                             src={herobgimg}
                             placeholder="blur"
                             fill
-                         
+                         className='md:hidden'
                             style={{
                                 objectFit: 'contain',
                             }}
