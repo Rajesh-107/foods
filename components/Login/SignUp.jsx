@@ -18,7 +18,7 @@ const SignUp = () => {
 
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/api/v1/registartion", {
+      const response = await axios.post("https://task-manager-server-dm87.vercel.app/registartion", {
         email,
         password,
         name,
