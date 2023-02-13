@@ -19,6 +19,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 import AdbIcon from '@mui/icons-material/Adb';
 import Dropdown from './Dropdown';
+import Mobilenav from './Mobilenav';
 
 
 const Header = () => {
@@ -26,8 +27,8 @@ const Header = () => {
 
     return (
    
-        <header className='w-full h-[90px] md:h-[60px] sticky  top-0 flex items-center bg-white z-50'>
-            <div className=" md:flex container mx-auto items-center justify-between h-full">
+        <header className='w-full h-[90px] md:h-[60px] sticky top-0 flex items-center bg-white z-50'>
+            <div className="hidden md:flex container mx-auto items-center justify-between h-full">
                 {/* leftside */}
                 <div className='text-2xl font-bold text-black'>
                     <Link href='/'>Logo</Link>
@@ -35,28 +36,28 @@ const Header = () => {
                 {/* middleside */}
                 <div className="w-[790px] h-full grid place-items-center">
                     <ul className="flex items-center  gap-12">
-                        <li className='text-black font-bold hover:text-[#ABC480] hidden md:flex cursor-pointer container mx-auto items-center justify-between h-full'>
+                        <li className=' text-black font-bold hover:text-[#ABC480] hidden md:flex cursor-pointer container mx-auto items-center justify-between h-full'>
                             <Link href='/'>About</Link>
                         </li>
-                        <li className='text-black hover:text-[#ABC480] font-bold hidden md:flex container mx-auto items-center justify-between h-full'>
+                        <li className=' text-black hover:text-[#ABC480] font-bold hidden md:flex container mx-auto items-center justify-between h-full'>
                             <Link href='/'>Shops</Link>
                         </li>
-                        <li className='text-black hover:text-[#ABC480] font-bold container items-center justify-between '>
+                        <li className=' hidden text-black hover:text-[#ABC480] font-bold container items-center justify-between '>
                             <Link href='/'>Subscribe</Link>
                         </li>
-                        <li className=' text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
+                        <li className='hidden text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
                             <Link href='/'>Bundle</Link>
                         </li>
                         <Link href='/'>
-                        <li className=' text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
+                        <li className='hidden text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
                             Recpies
                         </li>
                         </Link>
                         
-                        <li className=' text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
+                        <li className='hidden text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
                             <Link href='/'>Find</Link>
                         </li>
-                        <li className=' text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
+                        <li className='hidden text-black hover:text-[#ABC480] font-bold md:flex container mx-auto items-center justify-between h-full'>
                             <Link href='/'>More</Link>
                         </li>
                     </ul>
@@ -79,6 +80,7 @@ const Header = () => {
                     </ul>
                 </div>
             </div>
+            {<Mobilenav/>}
         </header>
     );
 };

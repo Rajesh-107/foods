@@ -10,7 +10,7 @@ import companylogo2 from '../../images/gluten-free 1.png'
 const HeroSection = () => {
   
     return (
-        <section class="bg-white  dark:bg-gray-900">
+        <section class="bg-white my-9 dark:bg-gray-900">
              <div className='-my-14'>
              <Image
                             alt="Mountains"
