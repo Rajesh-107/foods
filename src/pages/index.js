@@ -10,7 +10,7 @@ import Featured from 'components/heroSection/Featured'
 import "react-multi-carousel/lib/styles.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import { ToastContainer } from 'react-nextjs-toast'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -29,6 +29,7 @@ export default function Home() {
             <Anicentbg/>
             <Featured/>
         <Footer/>
+        <ToastContainer/>
       </main>
     </>
   )
